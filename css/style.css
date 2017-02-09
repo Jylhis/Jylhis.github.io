@@ -1,0 +1,119 @@
+html {
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a:visited {
+    color: blue;
+}
+
+body {
+    background: #445ed9;
+    background: -webkit-linear-gradient(left top, #5ED944, #445ed9, #445ed9,#5ED944);
+    background: -o-linear-gradient(bottom right, #5ED944, #445ed9, #445ed9, #5ED944);
+    background: -moz-linear-gradient(bottom right, #5ED944, #445ed9, #445ed9, #5ED944);
+    background: linear-gradient(to bottom right, #5ED944, #445ed9, #445ed9, #5ED944);
+}
+section {
+    min-height: 60vh;
+}
+section:first-child {
+    padding: 10px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+#box {
+    max-width: 900px;
+    margin: 20px;
+    background: #eee;
+    box-shadow:
+    0 1px 1px rgba(0,0,0,0.15), /* The top layer shadow */
+    0 10px 0 -5px #eee, /* The second layer */
+    0 10px 1px -4px rgba(0,0,0,0.15), /* The second layer shadow */
+    0 20px 0 -10px #eee, /* The third layer */
+    0 20px 1px -9px rgba(0,0,0,0.15); /* The third layer shadow */
+}
+
+@media (min-width: 550px) {
+    #box {
+        margin: 40px auto;
+        min-height: 300px;
+    }
+}
+
+@media (min-width: 1000px) {
+    #box {
+        margin-top: 10%;
+    }
+}
+
+#box img {
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    display: block;
+    float: unset;
+    padding-top: 20px;
+}
+
+@media (min-width: 550px) {
+    #box img {
+        padding-top:0;
+        margin-left:0;
+        display: unset;
+        float: left;
+        margin-right: 50px;
+    }
+}
+
+#boxtext {
+    padding: 5px;
+}
+
+#arrow {
+    margin:auto;
+}
+
+#portbox {
+    margin: auto;
+    font-size: 0.7em;
+    color: #111;
+    background: #eee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+@media (min-width: 550px) {
+    #portbox {
+        width: 90%;
+        font-size: 1em;
+    }
+}
+
+#portbox a {
+    color: black;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+th:nth-child(3), td:nth-child(3),
+th:nth-child(4), td:nth-child(4){
+    text-align: center;
+}
+
+footer {
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+    padding: 20px;
+}
+@media (min-width: 550px) {
+    footer {
+        margin-left: 4%;
+    }
+}
