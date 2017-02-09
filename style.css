@@ -1,0 +1,38 @@
+html {
+    color: rgb(247,239,237);
+}
+section:first-child {
+    padding: 1px;
+    height: 70vh;
+}
+
+section {
+    background-color: rgb(41, 50, 73);
+    height: 50vh;
+}
+
+
+#box {
+    background-color: rgb(172,161,161);
+    width: 70%;
+    max-height: 300px;
+    margin-left: 15%;
+    margin-top: 20%;
+    margin-bottom: 25%;
+    min-height: 300px;
+    /*padding: 20px;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#box img {
+    width: 200px;
+    height: 300px;
+    float: left;
+    margin-right: 50px;
+    -webkit-box-shadow: 10px 0 5px -2px #888;
+    box-shadow: 10px 0px 5px -2px #888;
+}
+
+#boxtext {
+   padding: 10px;
+}
