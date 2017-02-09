@@ -1,38 +1,64 @@
 html {
-    color: rgb(247,239,237);
+    /*color: rgb(247,239,237);*/
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
 }
-section:first-child {
-    padding: 1px;
-    height: 70vh;
+
+a:visited {
+    color: blue;
 }
 
 section {
-    background-color: rgb(41, 50, 73);
-    height: 50vh;
+    text-align: center;
+    padding: 1px;
+    /* background-color: rgb(41, 50, 73);*/
+    background-color: #2f0e5a;
+    height: 100vh;
 }
 
-
 #box {
-    background-color: rgb(172,161,161);
-    width: 70%;
+/*    text-align: left;*/
+    max-width: 900px;
     max-height: 300px;
-    margin-left: 15%;
-    margin-top: 20%;
-    margin-bottom: 25%;
-    min-height: 300px;
-    /*padding: 20px;*/
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 25%;*/
+    margin: 40px auto;
+    height: 300px;
+
+    background: #eee;
+    box-shadow:
+        0 1px 1px rgba(0,0,0,0.15), /* The top layer shadow */
+        0 10px 0 -5px #eee, /* The second layer */
+        0 10px 1px -4px rgba(0,0,0,0.15), /* The second layer shadow */
+        0 20px 0 -10px #eee, /* The third layer */
+        0 20px 1px -9px rgba(0,0,0,0.15); /* The third layer shadow */
 }
 
 #box img {
-    width: 200px;
+    width: 250px;
     height: 300px;
     float: left;
     margin-right: 50px;
-    -webkit-box-shadow: 10px 0 5px -2px #888;
-    box-shadow: 10px 0px 5px -2px #888;
 }
 
 #boxtext {
-   padding: 10px;
+   padding: 5px;
+}
+
+#arrow {
+    margin:auto;
+}
+
+#portbox {
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+    color: #111;
+/*    background-color: white;*/
+    min-height: 85vh;
+
+    background: #eee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

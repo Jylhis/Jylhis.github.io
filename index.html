@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Markus jylh&#228;nkagas</title>
-        
-        <link rel="stylesheet" href="other/normalize.css"> 
-        <!--link rel="stylesheet" href="other/skeleton.css"--> 
-        <link rel="stylesheet" href="style.css"> 
-    </head>
-    <body>
-        <section>
-            <div id="box">
-                <img src="face.png">
-                <div id="boxtext">
-                    <h1>Markus Jylh&#228;nkangas</h1>
-                    <p>Website: www.www.tld</p>
-                    <p>Email: asdf@asdf.asdf</p>
-                    <br>
-                    <p>Description: Short about profession etc.</p>
-                </div>
-            </div>
-            <a href="#portfolio">Linkki alas</a>
-        </section>
-        <section id="portfolio">
-        Ty�t
-        </section>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Markus Jylhänkagas</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <!--link rel="stylesheet" href="other/skeleton.css"-->
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <body>
+    <section id="card">
+      <div id="box">
+        <img src="face.png">
+        <div id="boxtext">
+          <h1>Markus Jylhänkangas</h1>
+          <p>
+            <a href="https://www.jylhis.com/"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a> •
+            <a href="mailto:markus@jylhis.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a> •
+            <a href="https://www.linkedin.com/in/jylhis"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+          </p>
+          <br>
+          <p>Description: Short about profession etc.</p>
+        </div>
+      </div>
+      <a data-scroll href="#portfolio" class="hvr-wobble-vertical" id="arrow"><i class="fa fa-arrow-circle-down fa-inverse fa-4x" aria-hidden="true"></i></a>
+    </section>
+    <section id="portfolio">
+      <div id="portbox">
+        Työt
+      </div>
+    </section>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+  </body>
 </html>
