@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/hover.css">
-    <!--link rel="stylesheet" href="other/skeleton.css"-->
     <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -21,12 +20,11 @@
         <div id="boxtext">
           <h1>Markus Jylhänkangas</h1>
           <p>
-            <a href="https://www.jylhis.com/"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a> •
-            <a href="mailto:markus@jylhis.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a> •
-            <a href="https://www.linkedin.com/in/jylhis"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+            <a target="_blank" href="mailto:markus@jylhis.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a> •
+            <a target="_blank" href="https://www.linkedin.com/in/jylhis"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
           </p>
           <br>
-          <p>Description: Short about profession etc.</p>
+          <p>Student at JAMK University of Applied Sciences</p>
         </div>
       </div>
       <a data-scroll href="#portfolio" class="hvr-wobble-vertical" id="arrow"><i class="fa fa-arrow-circle-down fa-inverse fa-4x" aria-hidden="true"></i></a>
@@ -36,17 +34,78 @@
         <table>
           <tr>
             <th>Project</th>
+            <th>Description</th>
             <th>Year</th>
             <th>Links</th>
           </tr>
+          <!--
+              <tr>
+                <td>Website</td>
+                <td>Coming soon... (HTML & CSS)</td>
+                <td>2017</td>
+                <td>
+                  <a target="_blank" href=""><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+                </td>
+              </tr>
+              -->
           <tr>
-            <td>Project</td>
-            <td>2011</td>
+            <td>JAMK comrade</td>
+            <td>JAMK Timetable & Aimo menu (php)</td>
+            <td>2016</td>
             <td>
-              <a href="https://www.gitlab.com/"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a>
-
-              <a href="https://www.jylhis.com/"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
-
+              <a target="_blank" href="https://www.jylhis.com/jamk"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Bubblesort vs. Mergesort</td>
+            <td>algorithms course work (C++)</td>
+            <td>2016</td>
+            <td><a target="_blank" href="https://gitlab.com/Jylhis/algoritmit-projekti/tree/master"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr>
+            <td>Ghost Spawner</td>
+            <td>Small 2D game engine and game (C# & SDL2)</td>
+            <td>2016</td>
+            <td><a target="_blank" href="https://gitlab.com/Loylykauha/Ghost-Spawner/tree/master"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr>
+          <tr>
+            <td>Adventurous Syntax</td>
+            <td>Ported Adventurous syntax to Sublime Text</td>
+            <td>2016</td>
+            <td><a target="_blank" href="https://gitlab.com/Jylhis/Adventurous-Syntax"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr>
+            <td>FightSimulator6000</td>
+            <td>Basics of programming course work (C++)</td>
+            <td>2016</td>
+            <td><a target="_blank" href="https://gitlab.com/Jylhis/FightSimulator6000/tree/master"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a></td>
+          </tr>
+          <tr>
+            <td>Narrow Jump</td>
+            <td>Fork of Flappybalt (Haxe & HaxeFlixel)</td>
+            <td>2014</td>
+            <td>
+              <!--<a href="https://www.gitlab.com/"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a>-->
+              <a target="_blank" href="https://gitlab.com/Jylhis/NarrowJump/tree/master"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Banjo & Boris</td>
+            <td>Game production course work (Javascript & ImpactJS)</td>
+            <td>2013</td>
+            <td>
+              <!--<a href="https://www.gitlab.com/"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a>-->
+              <a target="_blank" href="https://jylhis.gitlab.io/BanjoBoris/"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Hangover Guy</td>
+            <td>Warning: Horror (Visual Basic)</td>
+            <td>2012</td>
+            <td>
+              <!--<a href="https://www.gitlab.com/"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a>-->
+              <a target="_blank" href="https://gitlab.com/Jylhis/Hangover-Guy/tree/master"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a>
             </td>
           </tr>
         </table>
@@ -54,6 +113,21 @@
     </section>
 
     <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/smooth-scroll.js"></script>
+    <script>
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+    </script>
   </body>
 </html>
