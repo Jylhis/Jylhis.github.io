@@ -1,9 +1,7 @@
 html {
-    /*color: rgb(247,239,237);*/
-    color: black;
     font-family: 'Oswald', sans-serif;
     scroll-behavior: smooth;
-    min-width: 320px;
+    min-width: 383px;
 }
 
 a:visited {
@@ -11,48 +9,21 @@ a:visited {
 }
 
 body {
-    background: #445ed9; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top, #5ED944, #445ed9, #445ed9,#5ED944); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #5ED944, #445ed9, #445ed9, #5ED944); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #5ED944, #445ed9, #445ed9, #5ED944); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #5ED944, #445ed9, #445ed9, #5ED944); /* Standard syntax */
-}
-
-section {
-    text-align: center;
-    padding: 10px;
-    height: 100vh;
+    background: #445ed9;
+    background: -webkit-linear-gradient(left top, #5ED944, #445ed9, #445ed9,#5ED944);
+    background: -o-linear-gradient(bottom right, #5ED944, #445ed9, #445ed9, #5ED944);
+    background: -moz-linear-gradient(bottom right, #5ED944, #445ed9, #445ed9, #5ED944);
+    background: linear-gradient(to bottom right, #5ED944, #445ed9, #445ed9, #5ED944);
 }
 
 section:first-child {
-    margin-bottom: 50%;
-}
-
-@media (min-width: 550px) {
-    #box {
-        margin: 40px auto;
-        min-height: 300px;
-    }
-    section:first-child {
-        margin-bottom: 0;
-    }
-}
-
-@media (min-width: 750px) {
-    section:first-child {
-        margin-top: 15%;
-    }
-}
-@media (min-width: 1000px) {
-    section:first-child {
-        margin-top: 10%;
-    }
+    padding: 10px;
+    min-height: 100vh;
+    text-align: center;
 }
 
 #box {
     max-width: 900px;
-    //min-height: 300px;
-    //margin: 40px auto;
     margin: 20px;
     background: #eee;
     box-shadow:
@@ -69,6 +40,13 @@ section:first-child {
         min-height: 300px;
     }
 }
+
+@media (min-width: 1000px) {
+    #box {
+        margin-top: 10%;
+    }
+}
+
 
 #box img {
     width: 250px;
@@ -99,14 +77,17 @@ section:first-child {
 
 #portbox {
     margin: auto;
-    margin-top: 50px;
-    width: 90%;
+    //margin-top: 50px;
+    //width: 90%;
     color: #111;
-    /*    background-color: white;*/
-    min-height: 85vh;
-
     background: #eee;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+@media (min-width: 550px) {
+    #portbox {
+        width: 90%;
+    }
 }
 
 #portbox a {
@@ -126,4 +107,14 @@ th, td {
 th:nth-child(3), td:nth-child(3),
 th:nth-child(4), td:nth-child(4){
     text-align: center;
+}
+
+footer {
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+    padding: 20px;
+}
+@media (min-width: 550px) {
+    footer {
+        margin-left: 4%;
+    }
 }
