@@ -9,16 +9,25 @@ a:visited {
     color: blue;
 }
 
+body {
+    background: #445ed9; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #5ED944, #445ed9, #445ed9,#5ED944); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #5ED944, #445ed9, #445ed9, #5ED944); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #5ED944, #445ed9, #445ed9, #5ED944); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #5ED944, #445ed9, #445ed9, #5ED944); /* Standard syntax */
+}
+
 section {
     text-align: center;
     padding: 1px;
     /* background-color: rgb(41, 50, 73);*/
-    background-color: #2f0e5a;
+    /*background-color: #2f0e5a;*/
+
     height: 100vh;
 }
 
 #box {
-/*    text-align: left;*/
+    /*    text-align: left;*/
     max-width: 900px;
     max-height: 300px;
     /*margin-left: 15%;
@@ -29,11 +38,11 @@ section {
 
     background: #eee;
     box-shadow:
-        0 1px 1px rgba(0,0,0,0.15), /* The top layer shadow */
-        0 10px 0 -5px #eee, /* The second layer */
-        0 10px 1px -4px rgba(0,0,0,0.15), /* The second layer shadow */
-        0 20px 0 -10px #eee, /* The third layer */
-        0 20px 1px -9px rgba(0,0,0,0.15); /* The third layer shadow */
+    0 1px 1px rgba(0,0,0,0.15), /* The top layer shadow */
+    0 10px 0 -5px #eee, /* The second layer */
+    0 10px 1px -4px rgba(0,0,0,0.15), /* The second layer shadow */
+    0 20px 0 -10px #eee, /* The third layer */
+    0 20px 1px -9px rgba(0,0,0,0.15); /* The third layer shadow */
 }
 
 #box img {
@@ -44,7 +53,7 @@ section {
 }
 
 #boxtext {
-   padding: 5px;
+    padding: 5px;
 }
 
 #arrow {
@@ -56,9 +65,31 @@ section {
     margin-top: 50px;
     width: 90%;
     color: #111;
-/*    background-color: white;*/
+    /*    background-color: white;*/
     min-height: 85vh;
 
     background: #eee;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#portbox a {
+    color: black;
+}
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+
+th:first-child, td:first-child{
+    /*   padding-right: 0; */
+    text-align: left;
 }
