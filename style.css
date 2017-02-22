@@ -16,24 +16,46 @@ body {
     background: -o-linear-gradient(bottom right, #5ED944, #445ed9, #445ed9, #5ED944); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom right, #5ED944, #445ed9, #445ed9, #5ED944); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to bottom right, #5ED944, #445ed9, #445ed9, #5ED944); /* Standard syntax */
+
+
 }
 
 section {
     text-align: center;
-    padding: 1px;
-    /* background-color: rgb(41, 50, 73);*/
-    /*background-color: #2f0e5a;*/
-
+    padding: 10px;
     height: 100vh;
+}
+
+section:first-child {
+    margin-bottom: 50%;
+}
+
+@media (min-width: 550px) {
+    #box {
+        margin: 40px auto;
+        min-height: 300px;
+    }
+    section:first-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 750px) {
+    section:first-child {
+        margin-top: 15%;
+    }
+}
+@media (min-width: 1000px) {
+    section:first-child {
+        margin-top: 10%;
+    }
 }
 
 #box {
     max-width: 900px;
-    // max-height: 300px;
-    min-height: 300px;
-    margin: 40px auto;
-   // height: 300px;
-
+    //min-height: 300px;
+    //margin: 40px auto;
+    margin: 20px;
     background: #eee;
     box-shadow:
     0 1px 1px rgba(0,0,0,0.15), /* The top layer shadow */
@@ -43,18 +65,29 @@ section {
     0 20px 1px -9px rgba(0,0,0,0.15); /* The third layer shadow */
 }
 
+@media (min-width: 550px) {
+    #box {
+        margin: 40px auto;
+        min-height: 300px;
+    }
+}
+
 #box img {
     width: 250px;
     height: 300px;
-    float: left;
-    margin-right: 50px;
+    margin: auto;
+    display: block;
+    float: unset;
+    padding-top: 20px;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 550px) {
     #box img {
-        margin-left: 10%;
-        display: block;
-        float: unset;
+        padding-top:0;
+        margin-left:0;
+        display: unset;
+        float: left;
+        margin-right: 50px;
     }
 }
 
