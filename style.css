@@ -15,12 +15,15 @@ body {
     background: -moz-linear-gradient(bottom right, #5ED944, #445ed9, #445ed9, #5ED944);
     background: linear-gradient(to bottom right, #5ED944, #445ed9, #445ed9, #5ED944);
 }
-
+section {
+    min-height: 60vh;
+}
 section:first-child {
     padding: 10px;
     min-height: 100vh;
     text-align: center;
 }
+
 
 #box {
     max-width: 900px;
@@ -80,13 +83,22 @@ section:first-child {
     font-size: 0.7em;
     color: #111;
     background: #eee;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 @media (min-width: 550px) {
     #portbox {
         width: 90%;
         font-size: 1em;
+    }
+}
+@media (min-width: 1000px) {
+    #portbox {
+        margin-bottom: 15%;
+    }
+}
+@media (min-width: 1200px) {
+    #portbox {
+        margin-bottom: 15%;
     }
 }
 
