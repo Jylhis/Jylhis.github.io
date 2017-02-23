@@ -1,0 +1,12 @@
+image: node
+
+before_script:
+  - npm install html-minifier -g
+  - npm install uglify-js
+  - npm install clean-css
+
+minify:
+  script:
+    - mkdir output/
+    - html-minifier --minify-css true --minify-js true --output-dir output/ --input-dir . \
+      --remove-comments
