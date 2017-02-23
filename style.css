@@ -1,7 +1,6 @@
 html {
     font-family: 'Oswald', sans-serif;
     scroll-behavior: smooth;
-   // min-width: 383px;
 }
 
 a:visited {
@@ -23,7 +22,6 @@ section:first-child {
     min-height: 100vh;
     text-align: center;
 }
-
 
 #box {
     max-width: 900px;
@@ -49,7 +47,6 @@ section:first-child {
         margin-top: 10%;
     }
 }
-
 
 #box img {
     width: 250px;
@@ -89,16 +86,7 @@ section:first-child {
     #portbox {
         width: 90%;
         font-size: 1em;
-    }
-}
-@media (min-width: 1000px) {
-    #portbox {
-        margin-bottom: 15%;
-    }
-}
-@media (min-width: 1200px) {
-    #portbox {
-        margin-bottom: 15%;
+        margin-bottom: 10%;
     }
 }
 
