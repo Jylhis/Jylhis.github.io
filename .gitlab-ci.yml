@@ -8,5 +8,4 @@ before_script:
 minify:
   script:
     - mkdir output/
-    - html-minifier --minify-css true --minify-js true --output-dir output/ --input-dir . \
-      --remove-comments
+    - html-minifier --minify-css true --minify-js true --output-dir output/ --input-dir .
