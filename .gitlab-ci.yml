@@ -1,11 +1,18 @@
-image: node
+image: ubuntu
 
 before_script:
-  - npm install html-minifier -g
-  - npm install uglify-js
-  - npm install clean-css
+  - apt-get install -qq npm jpegoptim optipng
+  - npm install uglify-js clean-css html-minifier -g
 
 minify:
   script:
     - mkdir output/
-    - html-minifier --minify-css true --minify-js true --output-dir output/ --input-dir .
+    - html-minifier --minify-css true --minify-js true --output-dir output/ *.html
+    - html-minifier --minify-js true --output-dir output/js/ --input-dir js/
+    - html-minifier --minify-css true --output-dir output/css --input-dir css/
+    - mv fonts output/fonts
+    - optipng face.png
+    - mv face.png output/
+  artifacts:
+      paths:
+          - output/
