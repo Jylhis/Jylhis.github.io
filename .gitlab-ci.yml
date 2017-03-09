@@ -4,15 +4,16 @@ before_script:
   - apt-get update
   - apt-get install -qq npm jpegoptim optipng
   - ln -s /usr/bin/nodejs /usr/bin/node
-  - npm install uglify-js clean-css html-minifier -g
+  - npm install uglify-js clean-css-cli clean-css html-minifier -g
 
 minify:
   script:
     - html-minifier --help
     - mkdir output/
     - html-minifier --minify-css true --minify-js true -o output/index.html index.html
-    - html-minifier --minify-js true --output-dir output/js/ --input-dir js/
-    - html-minifier --minify-css true --output-dir output/css --input-dir css/
+    - uglify-js js/*.js && mv js/ output/
+    - cleancss css/*.css
+    - mv css/ output/
     - mv fonts output/fonts
     - optipng face.png
     - mv face.png output/
