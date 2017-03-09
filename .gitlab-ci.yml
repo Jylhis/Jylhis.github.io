@@ -3,6 +3,7 @@ image: ubuntu
 before_script:
   - apt-get update
   - apt-get install -qq npm jpegoptim optipng
+  - ln -s /usr/bin/nodejs /usr/bin/node
   - npm install uglify-js clean-css html-minifier -g
 
 minify:
