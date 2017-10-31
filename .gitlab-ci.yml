@@ -1,30 +1,30 @@
-image: ubuntu
+#image: ubuntu
 
-before_script:
-  - apt-get update
-  - apt-get install -qq npm jpegoptim optipng
-  - ln -s /usr/bin/nodejs /usr/bin/node
-  - npm install uglify-js clean-css-cli clean-css html-minifier -g
+#before_script:
+#  - apt-get update
+#  - apt-get install -qq npm jpegoptim optipng
+#  - ln -s /usr/bin/nodejs /usr/bin/node
+#  - npm install uglify-js clean-css-cli clean-css html-minifier -g
 
-minify:
-  script:
+#minify:
+  #script:
     # - html-minifier --help
-    - mkdir output/
+   # - mkdir output/
     # HTML
-    - html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-tag-whitespace --sort-attributes --use-short-doctype --minify-css true --minify-js true -o output/index.html index.html
+   # - html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-tag-whitespace --sort-attributes --use-short-doctype --minify-css true --minify-js true -o output/index.html index.html
     # Javascript
-    - uglifyjs js/*.js 
-    - mv js/ output/js
+    #- uglifyjs js/*.js 
+    #- mv js/ output/js
     # CSS
-    - mkdir output/css
-    - cleancss -o output/css/style.css css/style.css
-    - cleancss -o output/css/normalize-hover.css css/normalize-hover.css
-    - cleancss -o output/css/font-awesome.min.css css/font-awesome.min.css
+    #- mkdir output/css
+    #- cleancss -o output/css/style.css css/style.css
+    #- cleancss -o output/css/normalize-hover.css css/normalize-hover.css
+    #- cleancss -o output/css/font-awesome.min.css css/font-awesome.min.css
     # Fonts
-    - mv fonts output/fonts
+    #- mv fonts output/fonts
     # Images
-    - optipng face.png
-    - mv face.png output/
-  artifacts:
-      paths:
-          - output/
+    #- optipng face.png
+    #- mv face.png output/
+  #artifacts:
+     # paths:
+     #     - output/
