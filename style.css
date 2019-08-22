@@ -20,6 +20,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 a {
     background-color: transparent;
     color: #0074D9;
+    text-decoration: none;
 }
 
 a:active, a:hover {
