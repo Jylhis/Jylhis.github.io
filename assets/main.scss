@@ -1,0 +1,60 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+.site-header {
+    border-top: 0;
+    border-bottom: 0;
+
+}
+
+.site-title {
+    &:visited {
+    color: unset;
+  }
+
+}
+
+.site-title, .post-link, .post-title  {
+      font-size: 2;
+  line-height: 2.625rem;
+  font-weight: 900;
+  font-family: Montserrat, sans-serif;
+  color: #11101E;
+
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
+    margin-bottom: 0;
+}
+
+a, a:visited, p {
+    color: #11101E;
+}
+p {
+    font-family: "Tiempos",TimesNewRoman,"Times New Roman",Times,Baskerville,Georgia,serif;
+    font-size: large;
+}
+
+.site-footer {
+    padding-bottom: 0;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fdfdfd;
+}
+
+a:hover {
+    color: #C21414
+}
+
+mark {
+    background-color: #F1B64A;
+}
