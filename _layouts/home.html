@@ -35,7 +35,7 @@ layout: default
             {%- if site.github_username -%}
             <tr>
                 <td style="text-align: center">
-                    <svg class="svg-icon" style="fill: black"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
+                    <svg class="svg-icon github-logo"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
                 </td>
                 <td>
                     <a rel="me" href="https://github.com/{{ site.github_username | cgi_escape | escape }}" title="{{ social.github | escape }}">
@@ -48,7 +48,7 @@ layout: default
             {%- if site.linkedin_username -%}
             <tr>
                 <td style="text-align: center">
-                    <svg class="svg-icon grey" style="fill: #2867B2"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg>
+                    <svg class="svg-icon linkedin-logo"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg>
                 </td>
                 <td>
                     <a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}">

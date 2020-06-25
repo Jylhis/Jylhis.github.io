@@ -23,8 +23,7 @@ figure {
 }
 
 hr {
-    color: rgba(0, 0, 0, 0.13);
-    background-color: #000;
+    background-color: $text-color;
     border: none;
     height: 3px;
     margin-bottom: .85em;
@@ -32,6 +31,12 @@ hr {
     padding: 0;
     margin-left: -1em;
     margin-right: -1em;
+}
+
+@media (prefers-color-scheme: dark) {
+    hr {
+        background-color: $text-color-dark;
+    }
 }
 
 
@@ -62,6 +67,13 @@ body {
     line-height: 1.6;
     // Footer
     padding-top: .15em;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $background-color-dark;
+        color: $text-color-dark;
+    }
 }
 
 
@@ -104,6 +116,16 @@ main {
 img {
     max-width: 100%;
     vertical-align: middle;
+}
+
+@media (prefers-color-scheme: dark) {
+    img {
+        opacity: .75;
+        transition: opacity .5s ease-in-out;
+    }
+    img:hover {
+        opacity: 1;
+    }
 }
 
 
@@ -154,6 +176,20 @@ h2 {
     margin-top: 1em;
 }
 
+.github-logo {
+    fill: black;
+}
+
+@media (prefers-color-scheme: dark) {
+    .github-logo {
+        fill: white;
+    }
+}
+
+.linkedin-logo {
+    fill: #2867B2;
+}
+
 
 /**
  * Links
@@ -173,6 +209,8 @@ a {
         text-decoration: underline;
     }
 }
+
+@media (prefers-color-scheme: dark) {}
 
 a.list-item:hover {
     text-decoration: none;
@@ -282,26 +320,12 @@ pre {
 
 table {
     margin-bottom: $spacing-unit;
-    //width: 100%;
     text-align: $table-text-align;
     color: $text-color;
-    //border-collapse: collapse;
-    //border: 1px solid $grey-color-light;
-    /*tr {
-        &:nth-child(even) {
-            background-color: lighten($grey-color-light, 6%);
-        }
+}
+
+@media (prefers-color-scheme: dark) {
+    table {
+        color: $text-color-dark
     }
-    th,
-    td {
-        padding: ($spacing-unit / 3) ($spacing-unit / 2);
-    }
-    th {
-        background-color: lighten($grey-color-light, 3%);
-        border: 1px solid darken($grey-color-light, 4%);
-        border-bottom-color: darken($grey-color-light, 12%);
-    }
-    td {
-        border: 1px solid $grey-color-light;
-    }*/
 }

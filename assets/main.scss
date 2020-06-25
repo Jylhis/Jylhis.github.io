@@ -22,7 +22,7 @@ button,
     font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Roboto, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
-.header a,
+.backbutton a,
 .page-title,
 .title,
 .sub-title,
@@ -45,13 +45,11 @@ h4,
 h5,
 h6 {
     font-weight: 600;
-    color: black;
     display: block;
     width: fit-content;
 }
 
 .page-title {
-    color: black;
     display: block;
     width: fit-content;
     margin-bottom: 0.2em;
@@ -117,7 +115,7 @@ img {
 }
 
 .title {
-        color: #005aff;
+    color: $brand-color-var;
 
     font-size: 130%;
     margin-bottom: 0;
@@ -149,11 +147,11 @@ img {
     font-weight: 600;
     padding: 0 .25em;
     /*border-radius: 8px;*/
-    border: 2px solid #105ae2;
+    border: 2px solid $brand-color;
     /*#1e88e5;*/
     background: #e0f0ff;
     /*#f1f8ff;*/
-    color: #105ae2;
+    color: $brand-color;
     /*#1e88e5;*/
     margin: 0.1em;
     font-size: .9em;
@@ -200,44 +198,34 @@ footer {
 }
 
 // Go back button
-.header {
-    margin: 0;
-    font-weight: normal;
+.backbutton {
+    //margin: 0;
+    //font-weight: normal;
     letter-spacing: .02em;
-    background-color: #01579b;
-    color: white;
+    //background-color: #01579b;
     /*min-width: 100%;*/
     z-index: 1;
     height: 1.5em;
-    min-height: 1.5em;
+    //min-height: 1.5em;
     line-height: normal;
-    padding: 0;
-    border-bottom: 3px solid black;
-    margin-bottom: 0.8em;
-    border-bottom: .25em solid #01579b;
+    //padding: 0;
+    //border-bottom: 3px solid black;
+    //margin-bottom: 0.8em;
+    //border-bottom: .25em solid #01579b;
     text-align: center;
     /*redo*/
-    color: #105ae2;
-    background: none;
-    border: none;
-    width: 98%;
+    //color: $brand-color;
+    //background: none;
+    //border: none;
+    //width: 98%;
     max-width: 28em;
     margin: 0 auto;
-    margin-bottom: -.5em;
+    //margin-bottom: -.5em;
 }
 
-.header a {
+.backbutton a {
     margin-top: .25em;
     font-weight: bold;
 }
 
-.header .circle-badge {
-    width: 100%;
-    width: 2.5em;
-    height: 2.5em;
-    border-width: 6px;
-    margin-top: 0;
-    background: white;
-    border-color: #01579b;
-    padding: 2px;
-}
+

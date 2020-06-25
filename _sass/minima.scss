@@ -10,9 +10,16 @@ $base-line-height: 1 !default;
 
 $spacing-unit:     30px !default;
 
+// light
 $text-color:       black !default;
 $background-color: white !default;
 $brand-color:      #105ae2 !default;
+$brand-color-var:      #005aff !default;
+
+// dark
+$text-color-dark:       white !default;
+$background-color-dark: black !default;
+$brand-color-dark:      inverse(#105ae2) !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -65,6 +72,5 @@ $dt-yellow: #f1fa8c;
 // Import partials.
 @import
   "minima/base",
-  "minima/layout",
   "minima/syntax-highlighting"
 ;
