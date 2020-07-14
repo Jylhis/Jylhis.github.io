@@ -8,15 +8,25 @@ layout: default
         <a href="#">{{ site.title }}</a>
         <span>&#x1F44B</span>
     </h1>
+
+    {% comment %}
     <figure class="full-bleed">
         <img style src="/profile.png">
     </figure>
+    {% endcomment %}
+
 
     <table style="margin: 0 auto; font-size: 1.1em; padding: .5em; padding-top: 0;">
             <tr>
                 <td>
+                    {% comment %}
                     Software Engineer @
                     <span style="color:#0033A0;font-weight:bold;font-family: Optima, 'Helvetica Neue', Arial, 'Open Sans', 'Source Sans Pro'">CERN</span>
+                    {% endcomment %}
+
+                    DevOps Engineer @
+                    <span style="color:#6F9AD3;font-weight:bold;font-family: Arial, Calibri">Bittium</span>
+
                 </td>
             </tr>
     </table>
@@ -61,14 +71,23 @@ layout: default
         </table>
     </div>
 
-    <p class="page-title">Posts</p>
+    <p class="page-title"> <span class=brand-color-var>Posts</span> & <span class=secondary-color>Projects</span></p>
 
     {%- if site.posts.size > 0 -%} 
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%} 
         
-        {%- for post in site.posts reversed -%}
-            <a href="{{ post.url | relative_url }}" class="left-text full-bleed list-item first">
+        {%- for post in site.posts -%}
+
+
+            <a href="{{ post.url | relative_url }}" class="left-text full-bleed list-item first
+            {% if post.redirect_to -%}
+                external-link
+                {%- endif -%}
+            ">
                 <p class="title">{{ post.title | escape }}</p>
+                
+
+
                 {%- for tag in post.tags -%}
                     <span class="category">{{tag}}</span>
                 {%- endfor -%}

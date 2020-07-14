@@ -11,6 +11,18 @@
     margin: .75rem auto;
 }
 
+.brand-color {
+    color: $brand-color
+}
+
+.brand-color-var {
+    color: $brand-color-var
+}
+
+.secondary-color {
+    color: $brand-color-secondary
+}
+
 html,
 body,
 .tile .section-title,
@@ -114,6 +126,13 @@ img {
     
 }
 
+a.external-link {
+
+    &:hover, &:focus {
+        border: 3px solid $brand-color-secondary;
+    }
+}
+
 .title {
     color: $brand-color-var;
 
@@ -168,6 +187,11 @@ img {
     }
 }
 
+a.external-link .category {
+    color: $brand-color-secondary;
+    border: 2px solid $brand-color-secondary;
+    background: #ffefe0;
+}
 
 footer a {
     font-style: inherit;

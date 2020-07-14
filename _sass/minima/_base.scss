@@ -210,6 +210,10 @@ a {
     }
 }
 
+a.external-link .title {
+    color: $brand-color-secondary;
+}
+
 @media (prefers-color-scheme: dark) {}
 
 a.list-item:hover {
