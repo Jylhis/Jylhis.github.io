@@ -31,7 +31,10 @@ linkedin_username: jylhis
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
+redirect_from:
+  json: false
 #highlighter: rouge
 
 
